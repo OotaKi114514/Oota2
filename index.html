@@ -210,7 +210,7 @@
           case 37: //左
             if (canMove(-1, 0)) offsetX--;
             break;
-          case 38: //上
+          case 32: //space
             if (canMove(0, -1)) offsetY--;
             break;
           case 39: //右
@@ -219,7 +219,7 @@
           case 40: //下
             if (canMove(0, 1)) offsetY++;
             break;
-          case 32: //space
+          case 38: //上
             let newTet = createRotateTet();
             if (canMove(0, 0, newTet)) {
               tet = newTet;
